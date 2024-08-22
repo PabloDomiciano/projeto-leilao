@@ -3,11 +3,13 @@ import "./Home.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Marca from "../../img/img-inicial/logo-inicio.png";
+import HeroSection from "../../components/heroSection/HeroSection";
 
 const Home = () => {
   return (
     <div>
       <Header />
+      <HeroSection/>
       <div className="corpoGeral">
         <div className="text-container">
           <h1>Seja bem-vindo!</h1>
