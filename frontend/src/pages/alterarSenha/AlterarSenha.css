@@ -1,0 +1,112 @@
+/* Estilos gerais do documento */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.p-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.p-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+.input-field {
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.p-inputnumber-input {
+  width: 320px;
+}
+
+
+.p-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.p-button:hover {
+  background-color: #0056b3;
+}
+
+
+.p-password .p-password-header,
+.p-password .p-password-footer {
+  width: calc(100% - 24px); /* Ajusta a largura para não ultrapassar o padding */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.p-password .p-password-footer {
+  margin-top: 10px;
+}
+
+
+/* Estilos adicionais */
+.font-bold {
+  font-weight: bold;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.line-height-3 {
+  line-height: 1.5;
+}
+
+/* Estilos para FloatLabel */
+.p-float-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.p-float-label label {
+  position: absolute;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  color: #999;
+}
+
+.p-float-label .p-inputtext,
+.p-float-label .p-inputnumber,
+.p-float-label .p-password {
+  width: 100%;
+
+}
+

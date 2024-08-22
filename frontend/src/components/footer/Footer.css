@@ -1,0 +1,23 @@
+footer {
+  background-color: #d3bcaf;
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  margin: 5px 0;
+  display: block;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
