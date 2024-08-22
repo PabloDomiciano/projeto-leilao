@@ -1,10 +1,14 @@
 import React from "react";
 import "./Header.css";
-import Icon from "../../img/logo/logo.png"
-
-
+import Icon from "../../img/logo/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const entrar = () => {
+    navigate("/login");
+  };
+
   return (
     <header>
       <img src={Icon} alt="Icon" className="Icon" />
@@ -20,7 +24,7 @@ const Header = () => {
             <a href="#register">Cadastre-se</a>
           </li>
           <li>
-            <a href="#login">Entrar</a>
+            <button className="btn-entrar" onClick={entrar}>Entrar</button>
           </li>
         </ul>
       </nav>

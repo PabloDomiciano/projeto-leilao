@@ -21,7 +21,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-size: 1.2em;
   padding: 10px;
   border-radius: 5px;
@@ -29,4 +29,17 @@ nav a {
 
 nav a:hover {
   background-color: #ba9a86;
+}
+
+.btn-entrar {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px;
+  width: 109px;
+  border-radius: 3px;
+  border: none;
+  background-color: #ba9a86;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
 }

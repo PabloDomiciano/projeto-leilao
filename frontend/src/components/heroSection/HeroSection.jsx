@@ -17,14 +17,14 @@ const HeroSection = () => {
           >
             <path
               d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
-              stroke="#ffffff"
+              stroke="#514F4F"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
               d="M22 22L16 16"
-              stroke="#ffffff"
+              stroke="#514F4F"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
