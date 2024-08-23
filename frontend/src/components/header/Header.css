@@ -24,22 +24,26 @@ nav a {
   color: #000000;
   font-size: 1.2em;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 nav a:hover {
-  background-color: #ba9a86;
+  background-color: rgba(215, 200, 175, 1);
 }
 
 .btn-entrar {
   font-size: 1.2em;
   font-weight: bold;
-  padding: 5px;
-  width: 109px;
+  padding: 10px;
+  width: 125px;
   border-radius: 3px;
   border: none;
-  background-color: #ba9a86;
   color: #000000;
+  background-color: #ba9a86;
   cursor: pointer;
   text-decoration: none;
+}
+
+.btn-entrar:hover{
+  background-color: rgba(215, 200, 175, 1);
 }

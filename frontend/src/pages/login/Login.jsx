@@ -1,4 +1,6 @@
 import "./Login.css";
+import ImgLogin from "../../img/img-login/formlogin.jpg";
+import IconMarca from "../../img/img-login/marca.png";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 
@@ -22,29 +24,40 @@ const Login = () => {
   };
 
   return (
-    <section className="login">
-      <h2>Login</h2>
-      <form>
-        <input
-          name="email"
-          id="email"
-          onChange={handleChange}
-          type="email"
-          placeholder="E-mail"
-          className=""
-        />
-        <input
-          name="password"
-          id="password"
-          onChange={handleChange}
-          type="password"
-          placeholder="Senha"
-        />
-        <button onClick={login} label="Login" className="">
-          Entrar
-        </button>
-      </form>
-    </section>
+    <div className="body-login">
+      <div class="login-container">
+        <div class="login-image">
+          <img src={ImgLogin} alt="Imagem de Login" />
+        </div>
+        <div className="login-form">
+          <h2>Login</h2>
+          <h5>Bem-vindo de volta!</h5>
+          <form>
+            <input
+              name="email"
+              id="email"
+              onChange={handleChange}
+              type="email"
+              placeholder="E-mail:"
+              className=""
+            />
+            <input
+              name="password"
+              id="password"
+              onChange={handleChange}
+              type="password"
+              placeholder="Senha:"
+            />
+          </form>
+          <button onClick={login} label="Entrar" className="">
+            Entrar
+          </button>
+        </div>
+        <div className="login-header">
+          <img src={IconMarca} alt="Marca" class="login-icon" />
+        </div>
+      </div>
+    </div>
   );
 };
 

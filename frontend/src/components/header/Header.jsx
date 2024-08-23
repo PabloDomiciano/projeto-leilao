@@ -24,7 +24,9 @@ const Header = () => {
             <a href="#register">Cadastre-se</a>
           </li>
           <li>
-            <button className="btn-entrar" onClick={entrar}>Entrar</button>
+            <button className="btn-entrar" onClick={entrar}>
+              Entrar
+            </button>
           </li>
         </ul>
       </nav>
