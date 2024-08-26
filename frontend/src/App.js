@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import DefaulLayout from "./components/DefaultLayout.jsx";
+import DefaulLayout from "./components/defaultLayout/DefaultLayout.jsx";
 import SimpleLayout from "./components/SimpleLayout.jsx";
 import PrivateRoute from "./components/PrivateRoute";
 import Home from "./pages/home/Home";
@@ -33,9 +33,9 @@ function App() {
             path="/dashboard"
             element={
               <PrivateRoute>
-                  <DefaulLayout>
-                    <Dashboard />
-                  </DefaulLayout>
+                <DefaulLayout>
+                  <Dashboard />
+                </DefaulLayout>
               </PrivateRoute>
             }
           />

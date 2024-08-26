@@ -1,15 +1,14 @@
 import React from "react";
 import Sidebar from "../../components/sidebar/Sidebar";
-import ContentArea from "../../components/content/ContentArea";
-
 import "./Dashboard.css";
+import ProductCard from "../../components/productCard/ProductCard";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
       <Sidebar />
       <div className="main-content">
-        <ContentArea />
+        <ProductCard />
       </div>
     </div>
   );

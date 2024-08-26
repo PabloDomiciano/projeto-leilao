@@ -3,6 +3,7 @@ import "./Home.css";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Marca from "../../img/img-inicial/logo-inicio.png";
 import HeroSection from "../../components/heroSection/HeroSection";
+import { isAuthenticated } from "../../components/IsAuthenticated"
 
 const Home = () => {
   return (
@@ -19,9 +20,7 @@ const Home = () => {
         </div>
         <img src={Marca} alt="Logo" className="img-principal" />
       </div>
-      <div className="layout">
-        <Sidebar />
-      </div>
+      <div className="layout">{isAuthenticated() && <Sidebar />}</div>
     </div>
   );
 };

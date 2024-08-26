@@ -42,9 +42,9 @@ const Header = () => {
           <li>
             {!isAuthenticated && (
               <li>
-                <button className="btn-entrar" onClick={entrar}>
+                <a href="/login" className="btn-entrar" onClick={entrar}>
                   Entrar
-                </button>
+                </a>
               </li>
             )}
           </li>
