@@ -4,6 +4,7 @@ import IconMarca from "../../img/img-login/marca.png";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 
+
 const Login = () => {
   const [user, setUser] = useState({ email: "", password: "" });
   const navigate = useNavigate();
@@ -12,14 +13,13 @@ const Login = () => {
   };
 
   const login = () => {
-    //chamaria o backend para buscar as credenciais
     if (user.email === "teste@gmail.com" && user.password === "123") {
-      let token = "token do backend";
+      let token = "token-do-backend";
       localStorage.setItem("token", token);
       localStorage.setItem("email", user.email);
-      navigate("/");
+      navigate("/dashboard"); // Redireciona para a página privada após login
     } else {
-      alert("usuário ou senha incorretos");
+      alert("Usuário ou senha incorretos");
     }
   };
 

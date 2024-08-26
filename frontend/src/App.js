@@ -2,8 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DefaulLayout from "./components/DefaultLayout.jsx";
 import SimpleLayout from "./components/SimpleLayout.jsx";
+import PrivateRoute from "./components/PrivateRoute";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
+import Dashboard from "./pages/dashboard/Dashboard.jsx";
 import "./index.css";
 
 function App() {
@@ -15,8 +17,7 @@ function App() {
             path="/"
             element={
               <DefaulLayout>
-                {" "}
-                <Home />{" "}
+                <Home />
               </DefaulLayout>
             }
           />
@@ -26,6 +27,16 @@ function App() {
               <SimpleLayout>
                 <Login />
               </SimpleLayout>
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoute>
+                  <DefaulLayout>
+                    <Dashboard />
+                  </DefaulLayout>
+              </PrivateRoute>
             }
           />
         </Routes>

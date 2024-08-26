@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: #ba9a86 !important;
+  color: white;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  transition: width 0.3s ease;
+}
+
+
+/* Sidebar colapsado */
+.sidebar.collapsed {
+  width: 60px;
+  padding: 20px 10px;
+}
+
+/* Estilo do botão de toggle */
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  background-color: #6e6d6d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Estilo dos links dentro do sidebar */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
