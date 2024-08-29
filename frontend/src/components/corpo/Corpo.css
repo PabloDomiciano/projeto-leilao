@@ -1,0 +1,44 @@
+/* Corpo.css */
+
+.corpoGeral {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #faf1e6;
+  border-radius: 10px;
+}
+
+/* Estilização do texto */
+.text-container {
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Estilização do link sublinhado */
+u {
+  color: #ba9a86;
+  cursor: pointer;
+}
+
+u:hover {
+  text-decoration: none;
+}
+
+/* Estilização da imagem */
+.img-principal {
+  max-width: 230px;
+  max-height: 226px;
+  border-radius: 10px;
+}
