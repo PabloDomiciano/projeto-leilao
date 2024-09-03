@@ -8,7 +8,6 @@ const Header = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Verifica se há um token no localStorage
     const token = localStorage.getItem("token");
     if (token) {
       setIsAuthenticated(true);
@@ -22,6 +21,7 @@ const Header = () => {
   const inicio = () => {
     navigate("/");
   };
+  
   return (
     <header>
       <img src={Icon} alt="Icon" className="Icon" />

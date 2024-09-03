@@ -1,0 +1,12 @@
+.btn-sair {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 125px;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  background-color: rgba(215, 200, 175, 1);
+  cursor: pointer;
+  text-decoration: none;
+}

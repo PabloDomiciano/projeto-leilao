@@ -4,7 +4,6 @@ import IconMarca from "../../img/img-login/marca.png";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 
-
 const Login = () => {
   const [user, setUser] = useState({ email: "", password: "" });
   const navigate = useNavigate();
@@ -25,8 +24,8 @@ const Login = () => {
 
   return (
     <div className="body-login">
-      <div class="login-container">
-        <div class="login-image">
+      <div className="login-container">
+        <div className="login-image">
           <img src={ImgLogin} alt="Imagem de Login" />
         </div>
         <div className="login-form">

@@ -40,7 +40,14 @@
 }
 
 .sidebar ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   display: block;
 }
+
+.sidebar h2 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+}
+
