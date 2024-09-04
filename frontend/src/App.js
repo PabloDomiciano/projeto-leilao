@@ -5,6 +5,7 @@ import SimpleLayout from "./components/SimpleLayout.jsx";
 import PrivateRoute from "./components/PrivateRoute";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
+import Cadastro from "./pages/cadastro/Cadastro.jsx";
 import Dashboard from "./pages/dashboard/Dashboard.jsx";
 import "./index.css";
 
@@ -37,6 +38,14 @@ function App() {
                   <Dashboard />
                 </DefaulLayout>
               </PrivateRoute>
+            }
+          />
+          <Route
+            path="/cadastro"
+            element={
+              <SimpleLayout>
+                <Cadastro />
+              </SimpleLayout>
             }
           />
         </Routes>

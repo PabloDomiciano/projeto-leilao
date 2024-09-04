@@ -21,14 +21,18 @@ const Header = () => {
   const inicio = () => {
     navigate("/");
   };
-  
+
+  const cadastro = () => {
+    navigate("/cadastro");
+  };
+
   return (
     <header>
       <img src={Icon} alt="Icon" className="Icon" />
       <nav>
         <ul>
           <li>
-            <a href="/" onClick={inicio}>
+            <a onClick={inicio}>
               Início
             </a>
           </li>
@@ -38,7 +42,7 @@ const Header = () => {
           <li>
             <a href="#about">Quem somos</a>
           </li>
-          <li>{!isAuthenticated && <a href="#register">Cadastre-se</a>}</li>
+          <li>{!isAuthenticated && <a onClick={cadastro}>Cadastre-se</a>}</li>
           <li>
             {!isAuthenticated && (
               <li>

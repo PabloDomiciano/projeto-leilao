@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5; /* Background cinza claro */
+  background-color: #f5f5f5; 
 }
 
 .login-image img {
