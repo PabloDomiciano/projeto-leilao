@@ -46,10 +46,12 @@ const Sidebar = () => {
             <li>
               <Link to="/dashboard">Dashboard</Link>
             </li>
+            <li>
+              <Logout />
+            </li>
           </ul>
-          <Logout />
         </>
-      )}
+      )}{" "}
     </div>
   );
 };

@@ -1,48 +1,55 @@
 import React from "react";
 import ShowCaseItem from "./../showcaseItem/ShowCaseItem";
 import "./ProductCard.css";
+import Car1 from "./../../assets/car/Car1.jpg";
+import Car2 from "./../../assets/car/Car2.jpg";
+import Car3 from "./../../assets/car/Car3.jpg";
+import Car4 from "./../../assets/car/Car4.jpg";
+import Car5 from "./../../assets/car/Car5.jpg";
+import Car6 from "./../../assets/car/Car6.jpg";
+
 
 const ProductCard = () => {
   const items = [
     {
-      image: "https://via.placeholder.com/277x252",
-      name: "Item 1",
-      currentBid: "$100",
+      image: Car1,
+      name: "Ford SUV",
+      currentBid: "R$15.000,00",
       visits: 200,
       bids: 10,
     },
     {
-      image: "https://via.placeholder.com/277x252",
-      name: "Item 2",
-      currentBid: "$150",
+      image: Car2,
+      name: "Fusca Branco",
+      currentBid: "R$12.500,00",
       visits: 300,
       bids: 15,
     },
     {
-      image: "https://via.placeholder.com/277x252",
-      name: "Item 3",
-      currentBid: "$200",
+      image: Car3,
+      name: "Hyundai Tucson",
+      currentBid: "R$47.000,00",
       visits: 250,
       bids: 20,
     },
     {
-      image: "https://via.placeholder.com/277x252",
-      name: "Item 4",
-      currentBid: "$250",
+      image: Car4,
+      name: "Scott 1975",
+      currentBid: "$150.000,00",
       visits: 350,
       bids: 25,
     },
     {
-      image: "https://via.placeholder.com/277x252",
-      name: "Item 5",
-      currentBid: "$300",
+      image: Car5,
+      name: "Scort 1890",
+      currentBid: "$300.000,00",
       visits: 400,
       bids: 30,
     },
     {
-      image: "https://via.placeholder.com/277x252",
-      name: "Item 6",
-      currentBid: "$350",
+      image: Car6,
+      name: "BMW 2020",
+      currentBid: "$150.000,00",
       visits: 450,
       bids: 35,
     },

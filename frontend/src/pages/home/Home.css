@@ -1,4 +1,33 @@
-/* Corpo.css */
+.home-container {
+  display: flex;
+}
+
+
+.sidebar {
+  transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-60px); 
+  width: 60px;
+}
+
+.layout {
+  flex-shrink: 0;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  margin-left: 0px; 
+}
+
+.sidebar.collapsed ~ .main-content {
+  margin-left: 60px;
+}
+
 
 .corpoGeral {
   display: flex;
@@ -7,9 +36,9 @@
   padding: 20px;
   background-color: #faf1e6;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
-/* Estilização do texto */
 .text-container {
   margin-left: 20px;
 }
@@ -26,7 +55,6 @@ p {
   margin-bottom: 15px;
 }
 
-/* Estilização do link sublinhado */
 u {
   color: #ba9a86;
   cursor: pointer;
@@ -36,7 +64,6 @@ u:hover {
   text-decoration: none;
 }
 
-/* Estilização da imagem */
 .img-principal {
   max-width: 230px;
   max-height: 226px;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ImgCadastro from "../../img/img-login/formlogin.jpg";
-import IconMarca from "../../img/img-login/marca.png";
+import ImgCadastro from "../../assets/img-login/formlogin.jpg";
+import IconMarca from "../../assets/img-login/marca.png";
 import "./Cadastro.css";
 
 const Cadastro = () => {

@@ -5,7 +5,7 @@ import ProductCard from "../../components/productCard/ProductCard";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard">
+    <div className="dashboard-container">
       <Sidebar />
       <div className="main-content">
         <ProductCard />

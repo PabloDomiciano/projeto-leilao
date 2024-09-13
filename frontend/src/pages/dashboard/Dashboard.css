@@ -1,24 +1,24 @@
-.dashboard {
+.dashboard-container {
   display: flex;
-  flex-direction: column;
   height: 100vh;
 }
 
 .sidebar {
-  width: 250px; 
-  color: #fff;
-  padding: 20px;
-  position: fixed;
-  height: 100%; 
-  top: 0;
-  left: 0;
+  transition: width 0.3s ease;
 }
 
 .main-content {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
-  background-color: #f4f4f4;
+  transition: margin-left 0.3s ease;
+  overflow-x: auto;
 }
 
+.sidebar.collapsed ~ .main-content {
+  margin-left: 60px;
+}
+
+.sidebar ~ .main-content {
+  margin-left: 250px;
+  margin-top: 60px;
+}

@@ -1,25 +1,25 @@
 .sidebar {
   background-color: #ba9a86 !important;
-  color: white;
   width: 250px;
-  height: 100%;
+  color: #fff;
   padding: 20px;
-  position: relative;
-  transition: width 0.3s ease;
+  position: fixed;
+  top: 93px; 
+  bottom: 0px; 
+  left: 0px;
+  transition: transform 0.3s ease; 
 }
 
-
-/* Sidebar colapsado */
 .sidebar.collapsed {
-  width: 60px;
+  transform: translateX(-90%);  
+  width: 60px; 
   padding: 20px 10px;
 }
 
-/* Estilo do botão de toggle */
 .toggle-btn {
   position: absolute;
   top: 20px;
-  right: -20px;
+  right: -30px; 
   background-color: #6e6d6d;
   color: white;
   border: none;
@@ -27,9 +27,9 @@
   cursor: pointer;
   font-size: 18px;
   border-radius: 5px;
+  z-index: 100;
 }
 
-/* Estilo dos links dentro do sidebar */
 .sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -50,4 +50,3 @@
   text-decoration: none;
   display: block;
 }
-
