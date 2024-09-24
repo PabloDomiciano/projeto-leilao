@@ -14,10 +14,6 @@
   overflow-x: auto;
 }
 
-.sidebar.collapsed ~ .main-content {
-  margin-left: 60px;
-}
-
 .sidebar ~ .main-content {
   margin-left: 250px;
   margin-top: 60px;

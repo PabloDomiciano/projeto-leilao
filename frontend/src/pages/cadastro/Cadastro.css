@@ -11,9 +11,9 @@
 
 .cadastro-container {
   display: flex;
-  width: 80%;
-  max-width: 900px;
-  height: 500px;
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -64,6 +64,7 @@
   margin-bottom: 10px;
   font-size: 14px;
   color: #555;
+  
 }
 
 
@@ -84,11 +85,12 @@
   margin-top: 20px;
   font-weight: bold;
   color: #000000;
-  align-self: center;
+  margin-left: 40%;
+  margin-top: 50px;
 }
 
 .cadastro-form .form-input {
-  width: 100%;
+  width: 90%;
   font-size: 20px;
   border: none;
   border-radius: 3px;

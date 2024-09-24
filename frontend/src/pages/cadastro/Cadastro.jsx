@@ -110,7 +110,7 @@ const Cadastro = () => {
                 className="form-checkbox"
               />
               <span>
-                Aceito os Termos e Condições e a Política de Privacidade
+                Aceito os <u>Termos e Condições e a Política de Privacidade</u>
               </span>
               {errors.termos && <span className="error">{errors.termos}</span>}
             </div>
