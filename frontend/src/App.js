@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DefaulLayout from "./components/defaultLayout/DefaultLayout.jsx";
 import SimpleLayout from "./components/SimpleLayout.jsx";
+import Perfil from "./pages/perfil/Perfil.jsx";
 import PrivateRoute from "./components/PrivateRoute";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
@@ -31,6 +32,14 @@ function App() {
             }
           />
           <Route
+            path="/cadastro"
+            element={
+              <SimpleLayout>
+                <Cadastro />
+              </SimpleLayout>
+            }
+          />
+          <Route
             path="/dashboard"
             element={
               <PrivateRoute>
@@ -41,11 +50,13 @@ function App() {
             }
           />
           <Route
-            path="/cadastro"
+            path="/perfil"
             element={
-              <SimpleLayout>
-                <Cadastro />
-              </SimpleLayout>
+              <PrivateRoute>
+                <DefaulLayout>
+                  <Perfil />
+                </DefaulLayout>
+              </PrivateRoute>
             }
           />
         </Routes>

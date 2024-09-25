@@ -20,7 +20,7 @@ const Sidebar = () => {
           <h2>Menu</h2>
           <ul>
             <li>
-              <Link to="/dashboard/perfil">Perfil</Link>
+              <Link to="/perfil">Perfil</Link>
             </li>
             <li>
               <Link to="/dashboard/resumo">Resumo Geral</Link>
