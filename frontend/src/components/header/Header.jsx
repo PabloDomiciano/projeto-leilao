@@ -14,6 +14,13 @@ const Header = () => {
     }
   }, []);
 
+  const categoria = () => {
+    navigate("/category");
+  };
+  const auction = () => {
+    navigate("/auction");
+  };
+
   const entrar = () => {
     navigate("/login");
   };
@@ -32,15 +39,16 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a onClick={inicio}>
-              Início
-            </a>
+            <a onClick={inicio}>Início</a>
           </li>
           <li>
             <a href="#services">O que fazemos</a>
           </li>
           <li>
-            <a href="#about">Quem somos</a>
+            <a onClick={categoria}>Categoria</a>
+          </li>
+          <li>
+            <a onClick={auction}>Leilão</a>
           </li>
           <li>{!isAuthenticated && <a onClick={cadastro}>Cadastre-se</a>}</li>
           <li>

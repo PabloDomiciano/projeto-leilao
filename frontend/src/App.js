@@ -9,6 +9,10 @@ import Login from "./pages/login/Login";
 import Cadastro from "./pages/cadastro/Cadastro.jsx";
 import Dashboard from "./pages/dashboard/Dashboard.jsx";
 import "./index.css";
+import AuctionPublic from "./pages/auction-public/AuctionPublic.jsx";
+import Auction from "./pages/auction/Auction.jsx";
+import Category from "./pages/category/Category.jsx";
+import Unauthorized from "./pages/unauthorized/Unauthorized.jsx";
 
 function App() {
   return (
@@ -20,6 +24,35 @@ function App() {
             element={
               <DefaulLayout>
                 <Home />
+              </DefaulLayout>
+            }
+          />
+          <Route
+            path="/category"
+            element={
+              <PrivateRoute>
+                <DefaulLayout>
+                  <Category />
+                </DefaulLayout>
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/auction"
+            element={
+              <PrivateRoute>
+                <DefaulLayout>
+                  <Auction />
+                </DefaulLayout>
+              </PrivateRoute>
+            }
+          />
+          <Route path="/unauthorized" element={<Unauthorized />} />
+          <Route
+            path="/auction-public"
+            element={
+              <DefaulLayout>
+                <AuctionPublic />
               </DefaulLayout>
             }
           />

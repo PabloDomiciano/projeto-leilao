@@ -48,7 +48,6 @@ const Login = () => {
               placeholder="Senha:"
             />
           </form>
-          <div></div>
           <button onClick={login} label="Entrar" className="">
             Entrar
           </button>
