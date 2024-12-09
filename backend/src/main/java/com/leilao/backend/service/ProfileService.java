@@ -16,11 +16,13 @@ public class ProfileService {
     private ProfileRepository profileRepository;
 
     public Profile create(Profile profile) {
-        Profile profileSaved = profileRepository.save(profile);
-        return profileSaved;
+        // Profile profileSaved = profileRepository.save(profile);
+        // return profileSaved;
+        return profileRepository.save(profile);
     }
 
     public Profile update(Profile profile) {
+        // return profileRepository.save(profile);
         Profile profileSaved = profileRepository.findById(profile.getId())
                 .orElseThrow(() -> new NoSuchElementException("Objeto não encontrado"));
         profileSaved.setName(profile.getName());

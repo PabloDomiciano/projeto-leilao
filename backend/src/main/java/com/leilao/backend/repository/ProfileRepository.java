@@ -6,5 +6,4 @@ import com.leilao.backend.model.Profile;
 
 public interface ProfileRepository extends JpaRepository<Profile, Long> {
 
-    
 }
